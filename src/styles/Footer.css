@@ -1,0 +1,30 @@
+/* src/styles/Footer.css */
+
+.footer {
+  background-color: #1a1a1a;
+  color: #f7f3e8;
+}
+
+.footer-icons .icon {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.footer-icons .icon:hover {
+  transform: scale(1.2);
+  color: #c2a85e;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

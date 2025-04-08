@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+    --fondo: #1A1A1A;
+    --crema: #FDF6E3;
+    --dorado: #d2c69d;
+    --tinta: #111111;
+  }
+
+  body.light {
+    --fondo: #fffefc;
+    --crema: #222;
+    --dorado: #b58900;
+    --tinta: #f0f0f0;
+  }
+  
+  body.dark {
+    --fondo: #0d0d0d;
+    --crema: #fef9e7;
+    --dorado: #f4c542;
+    --tinta: #1a1a1a;
+  }
+  
+  body {
+    background-color: var(--fondo);
+    color: var(--crema);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  

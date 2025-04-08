@@ -1,0 +1,55 @@
+/* src/styles/Contact.css */
+
+.contact-page {
+    background-color: #1c1c1c; /* fondo oscuro tipo "tinta" */
+    color: #f5f5dc; /* color crema */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  }
+  
+  .contact-page h2 {
+    color: #ffd700; /* dorado */
+  }
+  
+  .contact-page input,
+  .contact-page textarea {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    color: #f5f5dc;
+  }
+  
+  .contact-page input:focus,
+  .contact-page textarea:focus {
+    outline: none;
+    border-color: #ffd700;
+    box-shadow: 0 0 5px #ffd700aa;
+  }
+  
+  .contact-page button {
+    background-color: #ffd700;
+    color: #1c1c1c;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-page button:hover {
+    transform: scale(1.05);
+    background-color: #e6c200;
+  }
+  
+  /* Contact.css o global */
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+  

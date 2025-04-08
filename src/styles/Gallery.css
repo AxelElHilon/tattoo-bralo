@@ -1,0 +1,106 @@
+/* src/styles/animations.css */
+
+@keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out forwards;
+  }
+  
+  @keyframes zoom-in {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .animate-zoom-in {
+    animation: zoom-in 0.4s ease-out forwards;
+  }
+  
+  /* Colores personalizados si no estás usando tailwind.config.js */
+  .bg-fondo {
+    background-color: #1b1b1b;
+  }
+  
+  .text-crema {
+    color: #f5f5dc;
+  }
+  
+  .bg-tinta {
+    background-color: #2a2a2a;
+  }
+  
+  .text-dorado {
+    color: #d4af37;
+  }
+  
+  .bg-dorado {
+    background-color: #d4af37;
+  }
+ 
+  /* src/styles/Gallery.css */
+
+.bg-fondo {
+    background-color: #121212;
+  }
+  
+  .text-crema {
+    color: #f7f3e8;
+  }
+  
+  .bg-tinta {
+    background-color: #1e1e1e;
+  }
+  
+  .text-dorado {
+    color: #c2a85e;
+  }
+  
+  .bg-dorado {
+    background-color: #c2a85e;
+  }
+  
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out both;
+  }
+  
+  .animate-zoom-in {
+    animation: zoomIn 0.3s ease-out both;
+  }
+  
+  /* Animaciones */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
