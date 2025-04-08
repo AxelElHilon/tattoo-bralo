@@ -1,6 +1,6 @@
-/* src/styles/Navbar.css */
 .navbar {
-  background-color: var(--fondo);
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(12px);
   color: var(--crema);
 }
 
@@ -10,7 +10,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  padding: 0 1rem;
+  position: relative;
 }
 
 .nav-links {
@@ -58,4 +59,41 @@
 .social-icon {
   color: inherit;
   transition: color 0.3s ease;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  z-index: 60;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 0 0 0 10px;
+    display: none;
+    align-items: flex-end;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-item {
+    margin: 0;
+  }
 }
